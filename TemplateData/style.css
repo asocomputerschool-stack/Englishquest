@@ -1,17 +1,8 @@
-body { padding: 0; margin: 0 }
-#unity-container { position: fixed; width: 100%; height: 100%; }
-#unity-canvas { width: 100%; height: 100%; background: #231F20 }
-#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
-#unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
-#unity-progress-bar-empty { margin-left: auto; margin-right: auto; width: 141px; height: 18px; margin-top: 10px; background: url('progress-bar-empty-dark.png') no-repeat center }
-#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
-#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
-/* ---------- PC・タブレット ---------- */
-
 html, body {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
     background: #000;
     overflow: hidden;
 }
@@ -22,22 +13,71 @@ body {
     align-items: center;
 }
 
+/* PC・iPad */
+#game-wrapper {
+    aspect-ratio: 9 / 16;
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+}
+
 #unity-container {
-    position: relative !important;
-    width: min(56.25vh, 100vw);
-    height: min(100vh, 177.78vw);
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 #unity-canvas {
-    width: 100% !important;
-    height: 100% !important;
+    width: 100%;
+    height: 100%;
+    background: #231F20;
 }
 
-@media (max-width: 768px) {
+/* ローディング */
 
-    #unity-container{
+#unity-loading-bar {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    display:none;
+}
+
+#unity-logo{
+    width:154px;
+    height:130px;
+    background:url('unity-logo-dark.png') center no-repeat;
+}
+
+#unity-progress-bar-empty{
+    width:141px;
+    height:18px;
+    margin:10px auto 0;
+    background:url('progress-bar-empty-dark.png') center no-repeat;
+}
+
+#unity-progress-bar-full{
+    width:0%;
+    height:18px;
+    background:url('progress-bar-full-dark.png') center no-repeat;
+}
+
+#unity-warning{
+    position:absolute;
+    top:10px;
+    left:50%;
+    transform:translateX(-50%);
+    display:none;
+}
+
+/* スマホ */
+
+@media (max-width:768px){
+
+    #game-wrapper{
         width:100vw;
         height:100vh;
+        aspect-ratio:auto;
     }
 
 }
