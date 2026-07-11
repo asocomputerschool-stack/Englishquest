@@ -6,3 +6,38 @@ body { padding: 0; margin: 0 }
 #unity-progress-bar-empty { margin-left: auto; margin-right: auto; width: 141px; height: 18px; margin-top: 10px; background: url('progress-bar-empty-dark.png') no-repeat center }
 #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+/* ---------- PC・タブレット ---------- */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#unity-container {
+    position: relative !important;
+    width: min(56.25vh, 100vw);
+    height: min(100vh, 177.78vw);
+}
+
+#unity-canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media (max-width: 768px) {
+
+    #unity-container{
+        width:100vw;
+        height:100vh;
+    }
+
+}
