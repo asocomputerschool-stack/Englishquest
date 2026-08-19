@@ -5,11 +5,17 @@
   "display": "fullscreen",
   "background_color": "#231F20",
   "theme_color": "#000000",
-  "description": "RPGバトルを楽しみながら英単語を学べる学習ゲームです。スマートフォンやPCで手軽に遊べます。",
+  "description": "RPGバトルを楽しみながら英単語を学べる学習ゲームです。",
   "icons": [
     {
-      "src": "Icon.png",
-      "sizes": "1254x1254",
+      "src": "Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "Icon-512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     }
