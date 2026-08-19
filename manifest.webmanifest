@@ -1,15 +1,17 @@
 {
-    "name": "英単語RPG",
-    "short_name": "英単語RPG",
-    "start_url": "index.html",
-    "display": "fullscreen",
-    "background_color": "#231F20",
-    "theme_color": "#000",
-    "description": "RPGバトルを楽しみながら英単語を学べる学習ゲームです。スマートフォンやPCで手軽に遊べます。",
-    "icons": [{
-      "src": "icon.png",
-      "sizes": "432x432",
+  "name": "英単語RPG",
+  "short_name": "英単語RPG",
+  "start_url": "./",
+  "display": "fullscreen",
+  "background_color": "#231F20",
+  "theme_color": "#000000",
+  "description": "RPGバトルを楽しみながら英単語を学べる学習ゲームです。スマートフォンやPCで手軽に遊べます。",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
-    }]
-  }
+      "purpose": "any"
+    }
+  ]
+}
