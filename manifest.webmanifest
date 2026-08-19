@@ -7,8 +7,8 @@
     "theme_color": "#000",
     "description": "RPGバトルを楽しみながら英単語を学べる学習ゲームです。スマートフォンやPCで手軽に遊べます。",
     "icons": [{
-      "src": "TemplateData/icons/unity-logo-dark.png",
-      "sizes": "144x144",
+      "src": "icon.png",
+      "sizes": "432x432",
       "type": "image/png",
       "purpose": "any maskable"
     }]
